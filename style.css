@@ -1,0 +1,121 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+}
+
+/* Game Container */
+#game-container {
+    position: relative;
+    width: 70vw;
+    height: 90vh;
+    background-color: #d3d3d3;
+    border: 2px solid #333;
+    overflow: hidden;
+    display: block;
+    background-image: 
+        linear-gradient(to right, #ccc 1px, transparent 1px),
+        linear-gradient(to bottom, #ccc 1px, transparent 1px);
+    background-size: 50px 50px;
+}
+
+/* Side Panel */
+#side-panel {
+    width: 30vw;
+    height: 90vh;
+    background-color: #f0f8ff;
+    border-left: 2px solid #333;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* Target */
+#target {
+    width: 50px;
+    height: 50px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+/* Scoreboard and Timer */
+#scoreboard, #timer {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#scoreboard {
+    top: 10px;
+    left: 10px;
+}
+
+#timer {
+    top: 10px;
+    right: 10px;
+}
+
+/* Popup Styling */
+#popup-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#popup-content {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#popup-content button, #popup-content input {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Top Scores */
+#top-scores {
+    font-size: 18px;
+    margin-top: 30px;
+    padding: 10px;
+    border-top: 1px solid #333;
+}
+
+#score-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.score-entry {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.score-entry span {
+    width: 33%;
+    text-align: center;
+}

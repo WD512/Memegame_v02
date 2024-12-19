@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="popup-box" class="hidden">
+            <div id="popup-content">
+                <div id="start-popup" class="popup-section">
+                    <button id="start-button">Start Game</button>
+                </div>
+                <div id="end-popup" class="popup-section hidden">
+                    <p id="high-score-message" class="hidden">You made a high score!</p>
+                    <div id="name-input" class="hidden">
+                        <input id="player-name" type="text" placeholder="Enter your name">
+                        <button id="submit-name">Submit</button>
+                    </div>
+                    <button id="restart-button" class="hidden">Restart</button>
+                </div>
+            </div>
+        </div>
+        <div id="scoreboard">Score: 0</div>
+        <div id="timer">Time: 30</div>
+        <div id="target"></div>
+    </div>
+    <div id="side-panel">
+        <h2>Top Scores</h2>
+        <div id="score-list"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
